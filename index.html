@@ -1,23 +1,110 @@
 ---
 layout: home
 ---
+<div class="whiteboard-video">
+  <div id="video" name="video">
+    <div class="video-wrapper">
+      <iframe src="https://player.vimeo.com/video/138345045" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+  </div>
+  <a href="https://drive.google.com/file/d/0B28qUX9jREdITDQzZ25xbENleXc/view?usp=sharing" target="_blank">Link to video file</a>
+</div>
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<div class="links">
+  <h1>Links</h1>
+  <h2>Infographics</h2>
+  <div class="link-div">
+    <a href="https://drive.google.com/folderview?id=0B28qUX9jREdIcllKM2U5MHkya3c&usp=sharing" target="_blank">Infographics</a>
+  </div>
+  <h2>Stories</h2>
+  <div class="link-div">
+    <a href="http://womenonthe.run" target="_blank">Women on the run</a>
+    <a href="http://refugeediaries.com" target="_blank">Refugee diaries</a>
+  </div>
+  <h2>Hive Stock Photos</h2>
+  <div class="link-div">
+    <a href="https://drive.google.com/open?id=0B28qUX9jREdIMExsT3EtUG0wYUU" target="_blank">Women on the run</a>
+    <a href="https://drive.google.com/folderview?id=0B28qUX9jREdIU0ZiNGVwTVRPb2c&usp=sharing" target="_blank">Refugee diaries</a>
+  </div>
+  <h2>UNHCR Stock photos</h2>
+  <div class="link-div">
+    <a href="http://media.unhcr.org/C.aspx?VP3=CMS3&VF=Home" target="_blank">Refugees Media Photo Library</a>
+    <a href="https://drive.google.com/open?id=0B4fPhEvS_j4LemI4emFnZ1F3N2M" target="_blank">Euro Crisis</a>
+    <a href="https://drive.google.com/folderview?id=0B28qUX9jREdIUV9QSFVTaFJQdkU&usp=sharing" target="_blank">UNHCR Winter Photos (2014)</a>
+  </div>
+  <h2>About UNHCR/U4U/The Hive</h2>
+  <div class="link-div">
+    <a href="https://drive.google.com/file/d/0B28qUX9jREdINThoMG44X0VqOTg/view?usp=sharing" target="_blank">Hive 101 document</a>
+    <a href="http://projecthive.nyc" target="_blank">Project Hive Site</a>
+    <a href="http://unhcr.org" target="_blank">UNHCR website</a>
+    <a href="http://unrefugees.org" target="_blank">USA for UNHCR Website</a>
+  </div>
 
 </div>
+<div class="about">
+  <h1>About The Hive</h1>
+  <p>
+    The Hive is a special project of USA for UNHCR, the UN Refugee Agency, formed to be an instrument for engaging Americans around the refugee crisis and for finding new ways to mobilize action, build awareness and knowledge about issues relating to refugees. The Hive innovation lab uses advanced data science to develop groundbreaking new models for consumer engagement. The Hive is working to unlock the potential of the US market – both in terms of advocacy and fundraising – in support of refugees and related issues.
+  </p>
+
+  <h1>About USA for UNHCR</h1>
+  <p>
+    USA for UNHCR helps and protects refugees and people displaced by violence, conflict and persecution. Supporting UNHCR – the UN Refugee Agency – and its partners, we provide life-saving essentials including shelter, water, food, safety and protection. Around the world, we help refugees survive, recover and build a better future.
+  </p>
+  <p>
+    Together, we can give refugees the hope and dignity they deserve and help them rebuild their lives. Established by concerned American citizens, USA for UNHCR is a 501(c) (3) non-profit organization, headquartered in Washington, D.C.
+  </p>
+  <h1>About UNHCR</h1>
+  <p>
+    The Office of the United Nations High Commissioner for Refugees (UNHCR), also known as the UN Refugee Agency, is the world’s leading organization aiding and protecting people forced to flee their homes due to violence, conflict and persecution. UNHCR provides shelter, food, water, medical care, and other life- saving assistance to refugees around the world.
+  </p>
+  <p>
+    The dream of most refugees is to return home. When possible, UNHCR helps refugees return to their homeland. When refugees can’t go back home, UNHCR   helps them rebuild their lives in another country. Since its formation by the United Nations General Assembly in 1950, UNHCR has helped an estimated 50 million refugees restart their lives and has twice received the Nobel Peace Prize.
+  </p>
+</div>
+
+<!-- <div class="contact-form">
+  <iframe src="https://docs.google.com/forms/d/1SP7DIR7XYAs3bTO-wlP1xD6Oi1XqeavPzPSvx2S3xf0/viewform?embedded=true" width="730" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+</div> -->
+
+<div class="form-container">
+  <h1>Contact Us</h1>
+    
+  <form class="contact-form" action="https://docs.google.com/forms/d/1SP7DIR7XYAs3bTO-wlP1xD6Oi1XqeavPzPSvx2S3xf0/formResponse?embedded=true" method="POST" id="ss-form" target="_blank" onsubmit="">
+    <p>Get in touch! If you have any questions or would like more information on the Hive and the work we do, fill out the form below and someone on our team will follow up your request.</p>
+      <label>Name<span class="asterisk">*</span></label>
+      <input type="text" name="entry.839867418" value="" class="ss-q-short" id="entry_839867418" dir="auto" aria-label="Name  " aria-required="true" required="" title="">
+
+      <label>Location<span class="asterisk">*</span></label>
+      <input type="text" name="entry.1308621775" value="" class="ss-q-short" id="entry_1308621775" dir="auto" aria-label="Location  " aria-required="true" required="" title="">
+
+      <label>Email Address<span class="asterisk">*</span></label>
+      <input type="text" name="entry.1403761605" value="" class="ss-q-short" id="entry_1403761605" dir="auto" aria-label="Email Address   " aria-required="true" required="" title="">
+
+      <label>Phone Number &nbsp;</label>
+      <input type="text" name="entry.1321958541" value="" class="ss-q-short" id="entry_1321958541" dir="auto" aria-label="Phone Number   " title="">
+
+      <label class="area-label">Do you have a question, comment or would you like more information?<span class="asterisk">*</span></label>
+      <textarea name="entry.621393849" rows="8" cols="0" class="ss-q-long" id="entry_621393849" dir="auto" aria-label="Do you have a question, comment or would you like more information?   " aria-required="true" required=""></textarea>
+      <input type="hidden" name="draftResponse" value="[,,&quot;3546345866819836420&quot;]
+      ">
+      <input type="hidden" name="pageHistory" value="0">
+
+      <input type="hidden" name="fvv" value="0">
+
+
+      <input type="hidden" name="fbzx" value="3546345866819836420">
+
+      <input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">
+  </form>
+</div>
+<div id="overlay"></div>
+<div id="modal">
+  <div id="content">
+    <form class="pwd-form">
+      <label>password</label>
+      <input type="text">
+      <input type="submit">
+    </form>
+  </div>
+</div>  

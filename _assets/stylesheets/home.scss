@@ -1,1 +1,181 @@
-@import 'variables';
+$hive-yellow: #a8943e;
+$hive-brown: rgb(74, 68, 50);
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  color: $hive-brown;
+  background-color: #FAFAF9;
+}
+.whiteboard-video{
+  max-width: 700px;
+  text-align: center;
+  margin: auto;
+  & a{
+    color: $hive-brown;
+    text-align: center;
+    margin: auto;
+    &:hover{
+      color: $hive-yellow;
+    }
+  }
+}
+.video-wrapper{
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+
+  & iframe{
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    width: 80%;
+    height: 80%;
+    margin-left: -40%;
+    border: solid 5px black;
+  }
+}
+
+.about{
+  width: 80%;
+  margin: auto;
+  max-width: 700px;
+  background-color: white;
+}
+
+h1 {
+  text-align: center;
+  color: #FAFAF9;
+  background-color: $hive-brown;
+  padding: 0.3em;
+  border-radius: 10px;
+}
+
+h2{
+  display: block;
+  border-top: 2px solid $hive-brown;
+  border-bottom: 2px solid $hive-brown;
+}
+
+.links{
+  max-width: 700px;
+  padding: 2em;
+  margin: auto;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.link-div{
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 2em;
+    & a{
+      display: inline-block;
+      margin: auto;
+      margin-top: 1em;
+      background-color: $hive-yellow;
+      padding: 1em;
+      font-weight: 700;
+      color: white;
+      border: 2px solid $hive-brown;
+      border-radius: 7px;
+      transition: all .3s ease-in-out;
+      &:hover{
+        color: $hive-brown;
+        background-color: white;
+        text-decoration: none;
+        border-color: $hive-yellow;
+      }
+    }
+}
+
+#overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.9;
+  display: none; //BUGBUG
+}
+
+#modal{
+  position: fixed;
+   top: 50%;
+   left: 50%; 
+   -webkit-transform: translate(-50%, -50%);
+   -moz-transform: translate(-50%, -50%); 
+   -ms-transform: translate(-50%, -50%); 
+   -o-transform: translate(-50%, -50%); 
+   transform: translate(-50%, -50%); 
+  background-color: black;
+  padding: 1em;
+  border-radius: 14px;
+  display: none; //BUGBUG
+}
+
+
+#content{
+  border-radius: 8px;
+  background-color: white;
+  padding: 2em;
+  display: none; //BUGBUG
+}
+
+.form-container{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  background-color: white;
+  max-width: 700px;
+}
+
+.contact-form{
+  margin: auto;
+  width: 90%;
+  & label{
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    @media screen and (max-width: 600px){
+      width:40%;
+      text-align: left;
+    }
+  }
+  & input{
+    width: 40%;
+    display: inline-block
+  }
+  & textarea{
+    display: block;
+    width: 70%;
+    height: 40%;
+    margin: auto;
+  }
+  & .area-label{
+    padding: 2em 0 1em 0;
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  & [type="submit"]{
+    font-size: 1.25em;
+    width: auto;
+    padding: .5em;
+    margin: 1em auto 1em auto;
+    border: 2px solid $hive-brown;
+    background-color: $hive-yellow;
+    border-radius: 7px;
+    font-weight: 700;
+    color: white;
+    transition: all .3s ease-in-out;
+    &:hover{
+      border-color: $hive-yellow;
+      color: $hive-brown;
+      background-color: white;
+    }
+  }
+}
+
+
