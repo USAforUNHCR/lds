@@ -19,7 +19,6 @@ var modal = (function(){
 
     // Close the modal
     method.close = function () {
-      debugger;
       modal.modalDiv.hide();
       modal.overlay.hide();
       modal.content.empty();
