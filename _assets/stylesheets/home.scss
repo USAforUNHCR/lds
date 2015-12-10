@@ -96,8 +96,6 @@ h2{
   width: 100%;
   height: 100%;
   background-color: black;
-  opacity: 0.9;
-  display: none; //BUGBUG
 }
 
 #modal{
@@ -109,10 +107,9 @@ h2{
    -ms-transform: translate(-50%, -50%); 
    -o-transform: translate(-50%, -50%); 
    transform: translate(-50%, -50%); 
-  background-color: black;
+  background-color: $hive-brown;
   padding: 1em;
   border-radius: 14px;
-  display: none; //BUGBUG
 }
 
 
@@ -120,7 +117,6 @@ h2{
   border-radius: 8px;
   background-color: white;
   padding: 2em;
-  display: none; //BUGBUG
 }
 
 .form-container{
